@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BedManage</class>
+ <widget class="QWidget" name="BedManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1328</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>62</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+background:#FBD5AC;
+}
+
+</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>180</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QComboBox
+{
+	background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F1F6FF , stop:1 #E1EEFF);
+	border-radius: 2px;
+	border: 1px solid #E9EEF5;
+	font-size: 18px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	padding-left:8px;
+}
+QComboBox::down-arrow
+{
+	border-image:url(&quot;:/icons/images/icons_combobox_down_arrow.png&quot;);
+}
+QComboBox::drop-down
+{
+	border:none;
+	background:transparent;
+	padding-right:6px;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView {
+    outline: 0px solid gray;   
+    border: none;   
+    background-color: #FFFFFF;   
+    selection-background-color: #40a9ff;   
+	font-size: 14px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	border-radius:3px;
+	margin-left:4px;
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度 */
+}
+
+/* 下拉后，整个下拉窗体被选择的每项的样式 */
+QComboBox QAbstractItemView::item:selected {
+   color:#FFFFFF;
+   background-color: #1479FF;   /* 整个下拉窗体越过每项的背景色 */
+}
+
+/* QComboBox中的垂直滚动条 */
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+    border:none;
+	background:transparent;
+}
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+	width: 8px;
+    background-color:;   /* 空白区域的背景色*/
+	border-radius:4px;
+    background: #C9CDD4;   /* 小方块的背景色深灰lightblue */
+}</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>内科病区</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>儿科病区</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>2</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background:#70a1d7;
+color:#FFFFFF;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>在院人数：  人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background:#a3de83;
+color:#FFFFFF;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>昨日出院：  人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background:#49beb7;
+color:#FFFFFF;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>今日入院：  人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+color:#FFFFFF;
+
+background:#ff467e;
+}</string>
+          </property>
+          <property name="text">
+           <string>特殊护理：  人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background:#f64662;
+color:#FFFFFF;
+
+}</string>
+          </property>
+          <property name="text">
+           <string>一级护理：  人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background:#c61951;
+color:#FFFFFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>二级护理：  人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background:#741938;
+color:#FFFFFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>三级护理： 人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="minimumSize">
+           <size>
+            <width>125</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+background:#56132a;
+color:#FFFFFF;
+}</string>
+          </property>
+          <property name="text">
+           <string>危重病人：  人</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true">background:#f7f6e7;</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../../app.qrc"/>
+ </resources>
+ <connections/>
+</ui>

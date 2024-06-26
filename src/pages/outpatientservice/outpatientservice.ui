@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OutpatientService</class>
+ <widget class="QWidget" name="OutpatientService">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1369</width>
+    <height>1074</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:#FFFFFF;</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="RecordDialog" name="recordWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>400</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid #E9EEF5;
+background:#FFFFFF;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="minimumSize">
+      <size>
+       <width>28</width>
+       <height>28</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#tab2,#tab3,#tab4,#tab5,#tab6{
+
+}
+
+QTabWidget::tab-bar {
+	left: 0px;
+	background: #F5F9FF;
+	border:none;
+}
+
+QTabBar::tab {
+	background: transparent;
+	min-width: 128px;
+	min-height: 32px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #4E5969;
+	border:none;
+}
+
+QTabBar::tab:selected {
+	background: #F5F9FF;
+	border-top: 2px solid #1479FF;
+	font-weight: 500;
+	color: #1479FF;
+}
+	</string>
+     </property>
+     <property name="currentIndex">
+      <number>-1</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RecordDialog</class>
+   <extends>QWidget</extends>
+   <header>pages/outpatientservice/recorddialog.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

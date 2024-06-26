@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MedicinePage</class>
+ <widget class="QWidget" name="MedicinePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1072</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_31">
+     <item>
+      <widget class="QWidget" name="widget_21" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget
+{
+background:transparent;
+border:none;
+}
+QLabel{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+}
+
+QLineEdit{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;
+border:none;
+border-bottom:1px solid #1a1a1a;
+}</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_29">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_23">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string> 药房：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_pharmacy">
+          <property name="styleSheet">
+           <string notr="true">
+QComboBox
+{
+	background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F1F6FF , stop:1 #E1EEFF);
+	border-radius: 2px;
+	border: 1px solid #E9EEF5;
+	font-size: 18px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	padding-left:8px;
+}
+QComboBox::down-arrow
+{
+	border-image:url(&quot;:/icons/images/icons_combobox_down_arrow.png&quot;);
+}
+QComboBox::drop-down
+{
+	border:none;
+	background:transparent;
+	padding-right:6px;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView {
+    outline: 0px solid gray;   
+    border: none;   
+    background-color: #FFFFFF;   
+    selection-background-color: #40a9ff;   
+	font-size: 14px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	border-radius:3px;
+	margin-left:4px;
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度 */
+}
+
+/* 下拉后，整个下拉窗体被选择的每项的样式 */
+QComboBox QAbstractItemView::item:selected {
+   color:#FFFFFF;
+   background-color: #1479FF;   /* 整个下拉窗体越过每项的背景色 */
+}
+
+/* QComboBox中的垂直滚动条 */
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+    border:none;
+	background:transparent;
+}
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+	width: 8px;
+    background-color:;   /* 空白区域的背景色*/
+	border-radius:4px;
+    background: #C9CDD4;   /* 小方块的背景色深灰lightblue */
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>本地药房</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>长安大药房</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>48</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_22" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget
+{
+background:transparent;
+border:none;
+}
+QLabel{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+}
+
+QLineEdit{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;
+border:none;
+border-bottom:1px solid #1a1a1a;
+}</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_32">
+        <item>
+         <widget class="QLabel" name="label_25">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string> 处方类型：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_type">
+          <property name="styleSheet">
+           <string notr="true">
+QComboBox
+{
+	background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F1F6FF , stop:1 #E1EEFF);
+	border-radius: 2px;
+	border: 1px solid #E9EEF5;
+	font-size: 18px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	padding-left:8px;
+}
+QComboBox::down-arrow
+{
+	border-image:url(&quot;:/icons/images/icons_combobox_down_arrow.png&quot;);
+}
+QComboBox::drop-down
+{
+	border:none;
+	background:transparent;
+	padding-right:6px;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView {
+    outline: 0px solid gray;   
+    border: none;   
+    background-color: #FFFFFF;   
+    selection-background-color: #40a9ff;   
+	font-size: 14px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	border-radius:3px;
+	margin-left:4px;
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度 */
+}
+
+/* 下拉后，整个下拉窗体被选择的每项的样式 */
+QComboBox QAbstractItemView::item:selected {
+   color:#FFFFFF;
+   background-color: #1479FF;   /* 整个下拉窗体越过每项的背景色 */
+}
+
+/* QComboBox中的垂直滚动条 */
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+    border:none;
+	background:transparent;
+}
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+	width: 8px;
+    background-color:;   /* 空白区域的背景色*/
+	border-radius:4px;
+    background: #C9CDD4;   /* 小方块的背景色深灰lightblue */
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>普通</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>48</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_23" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget
+{
+background:transparent;
+border:none;
+}
+QLabel{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+}
+
+QLineEdit{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;
+border:none;
+border-bottom:1px solid #1a1a1a;
+}</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_33">
+        <item>
+         <widget class="QLabel" name="label_26">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>皮试结果：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_res">
+          <property name="styleSheet">
+           <string notr="true">
+QComboBox
+{
+	background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F1F6FF , stop:1 #E1EEFF);
+	border-radius: 2px;
+	border: 1px solid #E9EEF5;
+	font-size: 18px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	padding-left:8px;
+}
+QComboBox::down-arrow
+{
+	border-image:url(&quot;:/icons/images/icons_combobox_down_arrow.png&quot;);
+}
+QComboBox::drop-down
+{
+	border:none;
+	background:transparent;
+	padding-right:6px;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView {
+    outline: 0px solid gray;   
+    border: none;   
+    background-color: #FFFFFF;   
+    selection-background-color: #40a9ff;   
+	font-size: 14px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	border-radius:3px;
+	margin-left:4px;
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度 */
+}
+
+/* 下拉后，整个下拉窗体被选择的每项的样式 */
+QComboBox QAbstractItemView::item:selected {
+   color:#FFFFFF;
+   background-color: #1479FF;   /* 整个下拉窗体越过每项的背景色 */
+}
+
+/* QComboBox中的垂直滚动条 */
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+    border:none;
+	background:transparent;
+}
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+	width: 8px;
+    background-color:;   /* 空白区域的背景色*/
+	border-radius:4px;
+    background: #C9CDD4;   /* 小方块的背景色深灰lightblue */
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>正常</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>过敏</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_17">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>48</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_34">
+     <property name="rightMargin">
+      <number>15</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_24" native="true">
+       <property name="styleSheet">
+        <string notr="true">QWidget
+{
+background:transparent;
+border:none;
+}
+QLabel{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+}
+
+QLineEdit{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;
+border:none;
+border-bottom:1px solid #1a1a1a;
+}</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_30">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_24">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string> 药品类型：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_medicine_type">
+          <property name="styleSheet">
+           <string notr="true">
+QComboBox
+{
+	background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F1F6FF , stop:1 #E1EEFF);
+	border-radius: 2px;
+	border: 1px solid #E9EEF5;
+	font-size: 18px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	padding-left:8px;
+}
+QComboBox::down-arrow
+{
+	border-image:url(&quot;:/icons/images/icons_combobox_down_arrow.png&quot;);
+}
+QComboBox::drop-down
+{
+	border:none;
+	background:transparent;
+	padding-right:6px;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView {
+    outline: 0px solid gray;   
+    border: none;   
+    background-color: #FFFFFF;   
+    selection-background-color: #40a9ff;   
+	font-size: 14px;
+	font-weight: 400;
+	color: #1D2129;
+	line-height: 22px;
+	border-radius:3px;
+	margin-left:4px;
+}
+
+/* 下拉后，整个下拉窗体每项的样式 */
+QComboBox QAbstractItemView::item {
+    height: 40px;   /* 项的高度 */
+}
+
+/* 下拉后，整个下拉窗体被选择的每项的样式 */
+QComboBox QAbstractItemView::item:selected {
+   color:#FFFFFF;
+   background-color: #1479FF;   /* 整个下拉窗体越过每项的背景色 */
+}
+
+/* QComboBox中的垂直滚动条 */
+QComboBox QAbstractScrollArea QScrollBar:vertical {
+    border:none;
+	background:transparent;
+}
+
+QComboBox QAbstractScrollArea QScrollBar::handle:vertical {
+	width: 8px;
+    background-color:;   /* 空白区域的背景色*/
+	border-radius:4px;
+    background: #C9CDD4;   /* 小方块的背景色深灰lightblue */
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>西药</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>中成药</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>中草药</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_25" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget
+{
+background:transparent;
+border:none;
+}
+QLabel{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+}
+
+QLineEdit{
+color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;
+border:none;
+border-bottom:1px solid #1a1a1a;
+}</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_35" stretch="0,1">
+        <item>
+         <widget class="QLabel" name="label_27">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string> 药品检索：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_name">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_query">
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background: #1479FF;
+border-radius: 2px;
+font-size: 14px;
+font-weight: 400;
+color: #FFFFFF;
+line-height: 0px;
+}
+
+QPushButton:pressed{
+background:#4152A5;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>检索</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_commit">
+       <property name="minimumSize">
+        <size>
+         <width>76</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background: #9CC39A;
+border-radius: 2px;
+font-size: 14px;
+font-weight: 400;
+color: #0056B3;
+line-height: 0px;
+}
+
+QPushButton:pressed{
+background:#FFB137;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>开方</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="CustomTableView" name="table_medicine">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="styleSheet">
+        <string notr="true">QScrollArea{
+border:none;
+}
+
+
+QScrollBar
+{
+	background:#FFFFFF;
+	width:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+QScrollBar::handle
+{
+	background: #FC8217;
+}
+QScrollBar::sub-line
+{
+	border-image: url(:/icons/images/icons_add.png);
+	background:#FFFFFF;
+
+}
+QScrollBar::add-line
+{
+	background:#FFFFFF;
+border-image: url(:/icons/images/icons_combobox_down_arrow.png);
+
+}
+
+</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>523</width>
+             <height>478</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_medicine"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+color:red;
+backgroundLtransparent;
+border:none;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>75</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:none;</string>
+              </property>
+              <property name="text">
+               <string>禁忌：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="text_s_tabu">
+            <property name="styleSheet">
+             <string notr="true">color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:none;</string>
+              </property>
+              <property name="text">
+               <string>适应症：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="text_s_adaptation">
+            <property name="styleSheet">
+             <string notr="true">color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="styleSheet">
+               <string notr="true">border:none;</string>
+              </property>
+              <property name="text">
+               <string>不良反应：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="text_s_adverse">
+            <property name="styleSheet">
+             <string notr="true">color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="styleSheet">
+               <string notr="true">border:none;</string>
+              </property>
+              <property name="text">
+               <string>特殊说明：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="text_s_note">
+            <property name="styleSheet">
+             <string notr="true">color:#1a1a1a;
+font-size:16px;
+line-height:24px;
+padding-left:8px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomTableView</class>
+   <extends>QTableView</extends>
+   <header>widgets/customtableview/customtableview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
